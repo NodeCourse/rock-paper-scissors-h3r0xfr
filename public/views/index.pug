@@ -1,0 +1,8 @@
+include head.pug
+main
+    h1 Rock Paper Scissors
+    p.title Faites votre choix
+    
+    each item in choiceList
+        a(href="/" + item)
+            img(src="img/" + item + ".png").item

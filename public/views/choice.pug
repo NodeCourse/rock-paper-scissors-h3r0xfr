@@ -1,0 +1,15 @@
+include head.pug
+main
+    h1 #{result}
+    
+    div.container
+        div.item-play
+            img(src= "img/" + user + ".png")
+            p Vous
+        div.item-middle
+            p VS
+        div.item-play
+            img(src= "img/" + computer + ".png")
+            p Ordinateur
+    
+    a(href="/").button Rejouer
